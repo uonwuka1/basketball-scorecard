@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1b244a;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #eeeeee;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+    padding: 40px;
+}
+
+.home, .guest {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3 {
+    font-size: 36px;
+    letter-spacing: 2px;
+    margin: 0 0 16px;
+}
+
+.scoreboard-home, .scoreboard-guest {
+    width: 155px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #080001;
+    border-radius: 6px;
+    border: 3px solid transparent;
+    transition: border-color 0.2s;
+}
+
+.leader {
+    border-color: #f94f6d;
+}
+
+.scoreboard-home h2, .scoreboard-guest h2 {
+    margin: 0;
+    font-size: 90px;
+    font-family: "Courier New", monospace;
+    color: #f94f6d;
+}
+
+.buttons {
+    display: flex;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+button {
+    width: 45px;
+    height: 45px;
+    background: transparent;
+    border: 2px solid #9aabd8;
+    border-radius: 5px;
+    color: #9aabd8;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #9aabd8;
+    color: #1b244a;
+}
+
+.btn-reset {
+    width: auto;
+    padding: 0 10px;
+    border-color: #f94f6d;
+    color: #f94f6d;
+}
+
+.btn-reset:hover {
+    background: #f94f6d;
+    color: #1b244a;
+}
